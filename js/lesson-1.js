@@ -182,7 +182,16 @@
 // Цикл повинен питати число, доки користувач не
 // введе число більше 100, чи не натисне кнопку
 // Cancel в prompt
-let num = prompt("Введіть число більше 100");
-while (num !== null && Number(num) < 100) {
-  num = prompt("Введіть число більше 100");
+// let num = prompt("Введіть число більше 100");
+// while (num !== null && Number(num) < 100) {
+//   num = prompt("Введіть число більше 100");
+// }
+function calculateTotal(number) {
+  let sum = 0;
+  for (let i = number; i <= number; i++) {
+    sum += sum;
+  }
+  return sum;
 }
+
+console.log(calculateTotal(24));
